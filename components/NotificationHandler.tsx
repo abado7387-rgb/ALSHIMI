@@ -37,7 +37,7 @@ export const NotificationHandler = () => {
                     if (now >= reminderTime && now < dueDateTime) {
                         new Notification('Task Reminder', {
                             body: `Your task "${task.title}" is due soon.`,
-                            icon: '/vite.svg', // Optional: replace with your app's icon
+                            icon: './logo192.png', // Optional: replace with your app's icon
                         });
                         sessionStorage.setItem(notificationKey, 'true');
                     }

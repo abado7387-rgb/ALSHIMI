@@ -8,8 +8,12 @@ self.addEventListener('install', event => {
       .then(cache => {
         console.log('Opened cache');
         return cache.addAll([
-          '/',
-          '/index.html',
+          './',
+          './index.html',
+          './manifest.json',
+          './favicon.ico',
+          './logo192.png',
+          './logo512.png',
         ]);
       })
   );
